@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+jupyter
+black
+ruff
+pytest
+pre-commit
+fastapi
+uvicorn[standard]
+mlflow
+joblib
