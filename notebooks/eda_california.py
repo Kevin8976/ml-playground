@@ -55,10 +55,10 @@ pred = lr.predict(Xte)
 mae = mean_absolute_error(yte, pred)
 print("Baseline MAE:", mae)
 
-# 目标分布直方图
+# 目标分布直方图（用自动识别到的 target_col）
 plt.figure()
-df["medhousevalue"].hist(bins=30)
-plt.title("Target distribution ({target_col})")
+df[target_col].hist(bins=30)
+plt.title(f"Target distribution ({target_col})")
 plt.tight_layout()
 plt.savefig(out_dir / "target_hist.png", dpi=150)
 plt.close()
